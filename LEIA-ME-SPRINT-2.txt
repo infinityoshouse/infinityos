@@ -1,0 +1,39 @@
+INFINITY O.S. — SPRINT 2 / CLIENTES
+
+Arquivos incluídos:
+- src/app/(modules)/clientes/page.tsx
+- src/modules/clientes/types/customer.types.ts
+- src/modules/clientes/services/customers.service.ts
+- src/modules/clientes/hooks/useCustomers.ts
+
+Funcionalidades:
+- listagem integrada ao Supabase
+- cadastro de cliente
+- edição de cliente
+- exclusão com confirmação
+- filtros por status e tipo de pessoa
+- pesquisa por nome, documento, telefone, e-mail e cidade
+- dashboard dinâmico
+- estados de carregamento, salvamento e erro
+
+INSTALAÇÃO NO TERMUX
+
+1. Faça backup:
+cd ~/infinityos_backup
+cp -r src src_backup_antes_sprint2
+
+2. Extraia o ZIP na raiz do projeto, substituindo os arquivos:
+unzip -o ~/storage/downloads/InfinityOS_Sprint2.zip -d ~/infinityos_backup
+
+3. Inicie o servidor:
+cd ~/infinityos_backup
+rm -rf .next
+npm run dev
+
+4. Abra:
+http://localhost:3000/clientes
+
+Observação:
+O pacote preserva o schema que o projeto já utilizava na tabela customers:
+id, name, cpf_cnpj, person_type, document_type, phone, whatsapp,
+email, city, state, status, created_at e updated_at.

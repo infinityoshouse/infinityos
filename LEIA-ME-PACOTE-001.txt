@@ -1,0 +1,38 @@
+INFINITY O.S. — PACOTE INCREMENTAL 001
+Núcleo Clientes consolidado
+
+ARQUIVOS ENTREGUES
+- src/app/(modules)/clientes/page.tsx
+- src/modules/clientes/types/customer.types.ts
+- src/modules/clientes/services/customers.service.ts
+- src/modules/clientes/hooks/useCustomers.ts
+
+MELHORIAS
+- Modelo oficial de Cliente preservado e documentado.
+- Validação de CPF/CNPJ conforme PF ou PJ.
+- Validação de telefone com DDD.
+- Validação de e-mail e UF.
+- Mensagens mais claras para erros do Supabase.
+- Pesquisa sem diferença entre maiúsculas, minúsculas e acentos.
+- Proteção contra atualização de estado após desmontagem do componente.
+- Dashboard protegido contra datas inválidas.
+- CRUD mantido com atualização imediata da lista.
+
+COMO INSTALAR NO TERMUX
+1. Feche o servidor com CTRL + C.
+2. Entre no projeto:
+   cd ~/infinityos_backup
+3. Extraia o pacote sobre o projeto:
+   unzip -o ~/storage/downloads/InfinityOS_Pacote_001.zip -d .
+4. Confirme a pasta:
+   pwd
+5. Inicie:
+   npm run dev
+6. Abra:
+   http://localhost:3000/clientes
+   ou
+   http://192.168.2.146:3000/clientes
+
+BACKUP
+O backup criado anteriormente permanece em:
+~/InfinityOS_Backup_20260725_1329.zip
