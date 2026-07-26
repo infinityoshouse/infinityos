@@ -41,3 +41,21 @@ yarn-error.log*
 next-env.d.ts
 
 /generated/prisma
+# Infinity O.S.
+.agents/
+.claude/
+.windsurf/
+
+# Backups
+.src_backup_antes_sprint2/
+backup/
+backups/
+
+# Arquivos compactados
+*.zip
+*.bak
+*.old
+*.tmp
+
+# Android / Termux
+termux.properties
